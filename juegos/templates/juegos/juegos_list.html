@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos</title>
+</head>
+<body>
+    <h1>Juegos</h1>
+    <ul>
+      {% for juego in juegos %}
+        <article>
+          <li>
+            <p>Título: {{ juego.titulo }}</p>
+            <p>Género: {{ juego.genero }}</p>
+            <p>Fecha de lanzamiento: {{ juego.fecha_lanzamiento }}</p>
+          </li>
+        </article>
+      {% endfor %}
+    </ul>
+</body>
+</html>

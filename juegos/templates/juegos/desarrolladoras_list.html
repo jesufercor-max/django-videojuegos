@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrolladoras</title>
+</head>
+<body>
+    <h1>Desarrolladoras</h1>
+    <ul>
+      {% for desarrolladora in desarrolladoras %}
+        <article>
+          <li>
+            <p>Nombre: {{ desarrolladora.nombre }}</p>
+            <p>País: {{ desarrolladora.pais }}</p>
+            <p>Juegos creados: {{ desarrolladora.juegos_creados }}</p>
+          </li>
+        </article>
+      {% endfor %}
+    </ul>
+</body>
+</html>

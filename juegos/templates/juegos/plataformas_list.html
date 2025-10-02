@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataformas</title>
+</head>
+<body>
+    <h1>Plataformas</h1>
+    <ul>
+      {% for plataforma in plataformas %}
+        <article>
+          <li>
+            <p>Nombre: {{ plataforma.nombre }}</p>
+            <p>Fabricante: {{ plataforma.fabricante }}</p>
+            <p>Año de lanzamiento: {{ plataforma.año_lanzamiento }}</p>
+          </li>
+        </article>
+      {% endfor %}
+    </ul>
+</body>
+</html>
